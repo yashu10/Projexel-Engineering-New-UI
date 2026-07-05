@@ -1987,3 +1987,93 @@ img {
     filter: none;
     opacity: 1;
 }
+
+/* =========================================
+   ABOUT US PAGE RESPONSIVENESS FIXES
+   ========================================= */
+
+/* Responsive spacing utility */
+.section-padding {
+    padding: var(--section-spacing) 0;
+}
+
+/* Wide stat card spanning 2 columns on desktop/tablet */
+.stat-card-span-2 {
+    grid-column: span 2;
+}
+
+/* Timelines and Infographics */
+.timeline-container {
+    padding: 4rem 2rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+/* Button groups layout */
+.about-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Specific grids */
+.companies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+/* Responsive updates for About page */
+@media (max-width: 1024px) {
+    .companies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-2-col {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-spacing: 60px;
+    }
+
+    .stat-card-span-2 {
+        grid-column: span 1;
+    }
+
+    .timeline-container {
+        padding: 2.5rem 1rem;
+    }
+
+    .companies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-title {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .about-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-btns .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

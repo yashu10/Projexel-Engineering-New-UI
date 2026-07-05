@@ -5,7 +5,7 @@ document.write(`
                 <a href="index.html" class="logo-link">
                     <img src="assets/images/logo.png" alt="Joy Thomas Engineering Logo" class="header-logo">
                 </a>
-                <p class="company-tagline">Engineering, Procurement, Construction Works & Maintenance for Electrical, Instrumentation, HVAC</p>
+                <p class="company-tagline">Where Engineering Meets Execution, with Precision</p>
             </div>
         </div>
         <nav class="navbar" id="navbar">
