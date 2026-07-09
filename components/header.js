@@ -15,6 +15,7 @@ document.write(`
                     <a href="about.html">About Us</a>
                     <a href="projects.html">Projects</a>
                     <a href="services.html">Services</a>
+                    <a href="blog.html">Blog</a>
                     <a href="contact.html">Contact Us</a>
                 </div>
                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
