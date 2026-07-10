@@ -393,5 +393,73 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
     }
 
+    function initContactForm() {
+        const contactForm = document.getElementById('contactForm');
+        if (!contactForm) return;
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+
+            // Construct mailto link
+            const emailRecipient = 'projexel.engr@gmail.com';
+            const mailtoSubject = encodeURIComponent(subject);
+            const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+            const mailtoUrl = `mailto:${emailRecipient}?subject=${mailtoSubject}&body=${mailtoBody}`;
+
+            // Redirect to mailto
+            window.location.href = mailtoUrl;
+
+            // Show dynamic success state within the form card
+            const formCard = contactForm.closest('.contact-form-card');
+            if (formCard) {
+                formCard.style.opacity = '0';
+                formCard.style.transition = 'opacity 0.3s ease';
+                
+                setTimeout(() => {
+                    formCard.innerHTML = '';
+                    
+                    const successDiv = document.createElement('div');
+                    successDiv.className = 'success-message';
+                    successDiv.style.textAlign = 'center';
+                    successDiv.style.padding = '2rem 0';
+                    successDiv.style.opacity = '0';
+                    successDiv.style.transform = 'translateY(20px)';
+                    successDiv.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+
+                    successDiv.innerHTML = `
+                        <div style="font-size: 3.5rem; margin-bottom: 1.5rem; display: inline-block; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">✉️</div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--clr-text);">Message Prepared!</h3>
+                        <p style="color: var(--clr-text-muted); margin-bottom: 2rem; font-size: 1rem; max-width: 320px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+                            We have pre-filled the message in your mail client. Please send the email to finish reaching us.
+                        </p>
+                        <button id="resetFormBtn" class="btn btn-primary" style="font-size: 0.9rem; padding: 0.6rem 1.5rem;">Send Another Message</button>
+                    `;
+
+                    formCard.appendChild(successDiv);
+                    formCard.style.opacity = '1';
+
+                    // Trigger reflow to start transition
+                    requestAnimationFrame(() => {
+                        successDiv.style.opacity = '1';
+                        successDiv.style.transform = 'translateY(0)';
+                    });
+
+                    const resetBtn = document.getElementById('resetFormBtn');
+                    if (resetBtn) {
+                        resetBtn.addEventListener('click', () => {
+                            window.location.reload();
+                        });
+                    }
+                }, 300);
+            }
+        });
+    }
+
+    initContactForm();
     initProjectModals();
 });
