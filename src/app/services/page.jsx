@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ClientScripts from '@/components/ClientScripts';
 
 export const metadata = {
   title: "Our Services | Turnkey EPC, E&I & Fabrication | Projexel Engineering",
@@ -41,7 +40,7 @@ export default function ServicesPage() {
                     {/*  Mechanical Subsection  */}
                     <div className="glass-panel service-panel">
                         <div className="service-icon" style={{"background":"var(--clr-primary)","color":"white","borderRadius":"50%","width":"60px","height":"60px","display":"flex","alignItems":"center","justifyContent":"center","fontSize":"1.5rem","marginBottom":"1.5rem"}}>
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
                         </div>
                         <h3 className="portfolio-title" style={{"marginBottom":"1rem","fontSize":"1.5rem"}}>Mechanical Services</h3>
                         <p style={{"color":"var(--clr-text-muted)","marginBottom":"2rem"}}>We deliver comprehensive mechanical solutions tailored for industrial and infrastructure projects.</p>
@@ -66,7 +65,7 @@ export default function ServicesPage() {
                     {/*  Fabrication Subsection  */}
                     <div className="glass-panel service-panel">
                         <div className="service-icon" style={{"background":"var(--clr-primary)","color":"white","borderRadius":"50%","width":"60px","height":"60px","display":"flex","alignItems":"center","justifyContent":"center","fontSize":"1.5rem","marginBottom":"1.5rem"}}>
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                         </div>
                         <h3 className="portfolio-title" style={{"marginBottom":"1rem","fontSize":"1.5rem"}}>Fabrication Services</h3>
                         <p style={{"color":"var(--clr-text-muted)","marginBottom":"2rem"}}>High-quality, precision-engineered steel and heavy equipment fabrication.</p>
@@ -104,7 +103,7 @@ export default function ServicesPage() {
                     {/*  Electrical Subsection  */}
                     <div className="glass-panel service-panel">
                         <div className="service-icon" style={{"background":"var(--clr-primary)","color":"white","borderRadius":"50%","width":"60px","height":"60px","display":"flex","alignItems":"center","justifyContent":"center","fontSize":"1.5rem","marginBottom":"1.5rem"}}>
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
                         </div>
                         <h3 className="portfolio-title" style={{"marginBottom":"1rem","fontSize":"1.5rem"}}>Electrical Services</h3>
                         <p style={{"color":"var(--clr-text-muted)","marginBottom":"2rem"}}>End-to-end electrical solutions ensuring safe and efficient operations.</p>
@@ -132,7 +131,7 @@ export default function ServicesPage() {
                     {/*  Instrumentation Subsection  */}
                     <div className="glass-panel service-panel">
                         <div className="service-icon" style={{"background":"var(--clr-primary)","color":"white","borderRadius":"50%","width":"60px","height":"60px","display":"flex","alignItems":"center","justifyContent":"center","fontSize":"1.5rem","marginBottom":"1.5rem"}}>
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                         </div>
                         <h3 className="portfolio-title" style={{"marginBottom":"1rem","fontSize":"1.5rem"}}>Instrumentation Services</h3>
                         <p style={{"color":"var(--clr-text-muted)","marginBottom":"2rem"}}>Precision-driven instrumentation solutions for accurate monitoring and automation.</p>
@@ -169,7 +168,6 @@ export default function ServicesPage() {
     
 
       <Footer />
-      <ClientScripts />
     </>
   );
 }

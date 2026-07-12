@@ -1,5 +1,6 @@
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
+import ScrollObserver from "@/components/ScrollObserver";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,8 +24,10 @@ export default function RootLayout({ children }) {
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
       </head>
       <body>
+        <ScrollObserver />
         {children}
       </body>
     </html>
   );
 }
+

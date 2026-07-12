@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ClientScripts from '@/components/ClientScripts';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata = {
   title: "Contact Us | Projexel Engineering - Get a Quote in Ahmedabad",
@@ -73,31 +73,9 @@ export default function ContactPage() {
 
                 {/*  Contact Form  */}
                 <div className="contact-form slide-in-right">
-                    <div className="glass-panel contact-form-card">
-                        <h3 style={{"fontFamily":"var(--font-heading)","fontSize":"1.8rem","marginBottom":"2rem"}}>Send us a Message</h3>
-                        <form id="contactForm">
-                            <div style={{"display":"grid","gridTemplateColumns":"1fr 1fr","gap":"1.5rem"}}>
-                                <div className="form-group">
-                                    <label className="form-label">Full Name</label>
-                                    <input type="text" id="contactName" className="form-control" placeholder="John Doe" required />
-                                </div>
-                                <div className="form-group">
-                                    <label className="form-label">Email Address</label>
-                                    <input type="email" id="contactEmail" className="form-control" placeholder="john@company.com" required />
-                                </div>
-                            </div>
-                            <div className="form-group">
-                                <label className="form-label">Subject</label>
-                                <input type="text" id="contactSubject" className="form-control" placeholder="Project Inquiry" required />
-                            </div>
-                            <div className="form-group">
-                                <label className="form-label">Message</label>
-                                <textarea id="contactMessage" className="form-control" placeholder="How can we help you?" required></textarea>
-                            </div>
-                            <button type="submit" className="btn btn-primary btn-lg" style={{"width":"100%"}}>Send Message</button>
-                        </form>
-                    </div>
+                    <ContactForm />
                 </div>
+
             </div>
         </div>
     </section>
@@ -115,9 +93,9 @@ export default function ContactPage() {
                     width="100%" 
                     height="100%" 
                     style={{"border":"0"}} 
-                    allowfullscreen="" 
+                    allowFullScreen={true} 
                     loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
+                    referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </div>
@@ -129,7 +107,6 @@ export default function ContactPage() {
     
 
       <Footer />
-      <ClientScripts />
     </>
   );
 }

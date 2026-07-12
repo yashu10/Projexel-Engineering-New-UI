@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="container footer-grid">
               <div className="footer-brand">
                   <Link href="/" className="logo-link">
-                      <img src="assets/images/logo.png" alt="Projexel Engineering" className="logo-img" />
+                      <img src="/assets/images/logo.png" alt="Projexel Engineering" className="logo-img" />
                   </Link>
                   <p className="footer-desc">Setting the global benchmark in EPC, E&I, and Industrial Engineering services through an unwavering commitment to quality and execution excellence.</p>
               </div>
@@ -17,7 +17,7 @@ export default function Footer() {
                   <Link href="/services">Our Services</Link>
                   <Link href="/projects">Portfolio</Link>
                   <Link href="/contact">Contact Us</Link>
-                  <a href="assets/images/company-profile.pdf" target="_blank" style={{display: 'inline-flex', alignItems: 'center', gap: '0.35rem'}}><i className="ri-file-pdf-line" style={{color: '#ef4444'}}></i> Brochure</a>
+                  <a href="/assets/images/company-profile.pdf" target="_blank" style={{display: 'inline-flex', alignItems: 'center', gap: '0.35rem'}}><i className="ri-file-pdf-line" style={{color: '#ef4444'}}></i> Brochure</a>
               </div>
               <div className="footer-contact">
                   <h4>Contact Us</h4>

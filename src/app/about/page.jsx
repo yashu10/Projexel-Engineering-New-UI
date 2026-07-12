@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ClientScripts from '@/components/ClientScripts';
+import AnimatedCounter from '@/components/AnimatedCounter';
 
 export const metadata = {
   title: "About Us | Projexel Engineering - Leading EPC Contractor in Gujarat",
@@ -41,33 +41,33 @@ export default function AboutPage() {
                     <div className="about-btns">
                         <a href="/contact" className="btn btn-primary"
                             style={{"display":"inline-flex","alignItems":"center","gap":"0.5rem"}}>Request Consultation</a>
-                        <a href="assets/images/company-profile.pdf" target="_blank" className="btn btn-outline"
+                        <a href="/assets/images/company-profile.pdf" target="_blank" className="btn btn-outline"
                             style={{"display":"inline-flex","alignItems":"center","gap":"0.5rem"}}><i className="ri-file-pdf-line"
                                 style={{"fontSize":"1.1rem","color":"#ef4444"}}></i> Download Company Brochure</a>
                     </div>
                 </div>
 
-                {/*  Highlights Grid  */}
                 <div className="stats-grid">
                     <div className="stat-card glass-panel slide-in-right delay-1"
                         style={{"height":"100%","display":"flex","flexDirection":"column","justifyContent":"center"}}>
                         <div className="stat-icon">⏱️</div>
-                        <h3 className="stat-num" data-target="10" data-suffix="+">0</h3>
+                        <AnimatedCounter target={10} suffix="+" />
                         <p className="stat-label">Years of Experience</p>
                     </div>
                     <div className="stat-card glass-panel slide-in-right delay-2"
                         style={{"height":"100%","display":"flex","flexDirection":"column","justifyContent":"center"}}>
                         <div className="stat-icon">🏗️</div>
-                        <h3 className="stat-num" data-target="40" data-suffix="+">0</h3>
+                        <AnimatedCounter target={40} suffix="+" />
                         <p className="stat-label">Turnkey Projects Delivered</p>
                     </div>
                     <div className="stat-card stat-card-span-2 glass-panel slide-in-right delay-3"
                         style={{"height":"100%","display":"flex","flexDirection":"column","justifyContent":"center"}}>
                         <div className="stat-icon">⚙️</div>
-                        <h3 className="stat-num" data-target="15" data-suffix="+">0</h3>
+                        <AnimatedCounter target={15} suffix="+" />
                         <p className="stat-label">Fabrication Projects Completed</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -307,58 +307,58 @@ export default function AboutPage() {
             <div className="clients-grid"
                 style={{"display":"grid","gridTemplateColumns":"repeat(auto-fill, minmax(180px, 1fr))","gap":"2rem"}}>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="assets/images/Client Logo/Group 2739.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2739.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="assets/images/Client Logo/Group 2741.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2741.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="assets/images/Client Logo/Group 2743.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2743.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="assets/images/Client Logo/Group 2744.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2744.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="assets/images/Client Logo/Group 2745.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2745.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="assets/images/Client Logo/Group 2746.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2746.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="assets/images/Client Logo/Group 2747.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2747.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="assets/images/Client Logo/Group 2748.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2748.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="assets/images/Client Logo/Group 2749.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2749.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="assets/images/Client Logo/Group 2750.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2750.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="assets/images/Client Logo/Group 2751.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2751.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="assets/images/Client Logo/Group 2752.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2752.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="assets/images/Client Logo/Group 2753.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2753.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="assets/images/Client Logo/Group 2754.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2754.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="assets/images/Client Logo/Group 2755.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2755.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="assets/images/Client Logo/Group 2756.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2756.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="assets/images/Client Logo/Group 2757.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2757.png" alt="Client Logo" loading="lazy" />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="assets/images/Client Logo/Group 2758.png" alt="Client Logo" loading="lazy" />
+                    <img src="/assets/images/Client Logo/Group 2758.png" alt="Client Logo" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -411,7 +411,7 @@ export default function AboutPage() {
     
 
       <Footer />
-      <ClientScripts />
     </>
   );
 }
+
