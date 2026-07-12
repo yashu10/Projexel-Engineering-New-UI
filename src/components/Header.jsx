@@ -1,12 +1,21 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -35,7 +44,7 @@ export default function Header() {
                 <p className="company-tagline">Where Engineering Meets Execution, with Precision</p>
             </div>
         </div>
-        <nav className="navbar" id="navbar">
+        <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`} id="navbar">
             <div className="nav-container">
                 <div className={`nav-links ${isMenuOpen ? 'active' : ''}`} id="nav-links">
                     {navLinks.map((link) => {
