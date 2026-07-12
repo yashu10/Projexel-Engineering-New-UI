@@ -36,7 +36,7 @@ const blogPosts = [
                 <li><strong>Anchor Blocks:</strong> Heavy concrete or structural steel pillars that isolate piping loads from delicate rotating machinery.</li>
             </ul>
 
-            <h3><a href="services.html" style="color: inherit; text-decoration: underline;">Turnkey Process Piping Services by Projexel Engineering</a></h3>
+            <h3>Turnkey Process Piping Services by Projexel Engineering</h3>
             <p>At Projexel Engineering, we provide complete, certified process piping systems. From detailed isometric drawings and CAESAR II stress analysis to heavy shop pre-fabrication and certified orbital welding, our teams ensure your process pipelines are fully optimized, safe, and built to stand the test of time.</p>
         `
     },
@@ -76,7 +76,7 @@ const blogPosts = [
             <h3>3. Heat Management & Thermal Calculations</h3>
             <p>Switchgear and VFDs generate significant heat. If a control panel's internal temperature exceeds 50°C, delicate microprocessors inside the PLC degrade rapidly, causing random errors or complete system failure. Engineers calculate the panel's total thermal load (in watts) and select the appropriate cooling system: from simple louvered ventilation fans to closed-loop panel air conditioners for harsh, dusty outdoor environments.</p>
 
-            <h3><a href="services.html" style="color: inherit; text-decoration: underline;">How Projexel Engineering Delivers Custom E&I Solutions</a></h3>
+            <h3>How Projexel Engineering Delivers Custom E&I Solutions</h3>
             <p>Projexel Engineering specializes in custom design, assembly, and testing of industrial PLC and MCC switchgear panels. Our engineering teams assemble every panel under rigid ISO controls, using premium components from Siemens, Schneider, and ABB, ensuring your facility operates with uncompromising reliability and safety.</p>
         `
     },
