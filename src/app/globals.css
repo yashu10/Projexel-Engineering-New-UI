@@ -151,6 +151,7 @@ img {
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0 15px 40px -12px rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius-md);
 }
 
 .section-tag {
@@ -2154,5 +2155,50 @@ textarea.form-control {
     .contact-wrapper {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+}
+
+/* Service List Items */
+.service-list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    color: var(--clr-text-muted);
+}
+.service-list-icon {
+    color: var(--clr-primary);
+    font-weight: bold;
+    margin-right: 0.75rem;
+    margin-top: 0.1rem;
+}
+
+/* Mobile Footer Fixes */
+@media (max-width: 900px) {
+    .footer-brand, .footer-links, .footer-contact {
+        text-align: center;
+    }
+    .footer-contact-item {
+        justify-content: center;
+    }
+}
+
+/* Service Panel Fixes */
+.service-panel {
+    height: 100%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+.service-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -10px rgba(8, 65, 108, 0.15);
+    border-color: rgba(8, 65, 108, 0.2);
+}
+
+@media (max-width: 768px) {
+    .service-panel {
+        padding: 1.75rem 1.25rem;
     }
 }

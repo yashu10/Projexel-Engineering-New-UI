@@ -35,7 +35,7 @@ export default function ServicesPage() {
                     <p className="section-desc">Delivering comprehensive mechanical solutions and precision-engineered fabrication tailored for industrial and infrastructure projects.</p>
                 </div>
 
-                <div className="portfolio-grid two-cols fade-in-up delay-2" style={{"gridTemplateColumns":"repeat(auto-fit, minmax(400px, 1fr))"}}>
+                <div className="portfolio-grid two-cols fade-in-up delay-2" style={{"gridTemplateColumns":"repeat(auto-fit, minmax(min(100%, 400px), 1fr))"}}>
                     
                     {/*  Mechanical Subsection  */}
                     <div className="glass-panel service-panel">
@@ -98,7 +98,7 @@ export default function ServicesPage() {
                     <p className="section-desc">End-to-end electrical solutions and precision-driven instrumentation for accurate monitoring and safe, efficient operations.</p>
                 </div>
 
-                <div className="portfolio-grid two-cols fade-in-up delay-2" style={{"gridTemplateColumns":"repeat(auto-fit, minmax(400px, 1fr))"}}>
+                <div className="portfolio-grid two-cols fade-in-up delay-2" style={{"gridTemplateColumns":"repeat(auto-fit, minmax(min(100%, 400px), 1fr))"}}>
                     
                     {/*  Electrical Subsection  */}
                     <div className="glass-panel service-panel">

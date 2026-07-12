@@ -17,7 +17,7 @@ export default function Footer() {
                   <Link href="/services">Our Services</Link>
                   <Link href="/projects">Portfolio</Link>
                   <Link href="/contact">Contact Us</Link>
-                  <a href="/assets/images/company-profile.pdf" target="_blank" style={{display: 'inline-flex', alignItems: 'center', gap: '0.35rem'}}><i className="ri-file-pdf-line" style={{color: '#ef4444'}}></i> Brochure</a>
+                  <a href="/assets/images/company-profile.pdf" target="_blank"><i className="ri-file-pdf-line" style={{color: '#ef4444', marginRight: '0.35rem'}}></i> Brochure</a>
               </div>
               <div className="footer-contact">
                   <h4>Contact Us</h4>
