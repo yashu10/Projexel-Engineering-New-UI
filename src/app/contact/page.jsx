@@ -39,7 +39,7 @@ export default function ContactPage() {
                                     <h4>Our Office</h4>
                                     <p>1004, Sudarshan Saket, Behind Godrej Garden City,<br />Chainpur Road, Jagatpur, Ahmedabad – 382470</p>
                                     <div style={{"marginTop":"1.5rem"}}>
-                                        <a href="https://www.google.com/maps/dir//Sudarshan+Saket,+Ahmedabad" target="_blank" className="btn btn-primary" style={{"fontSize":"0.9rem","padding":"0.6rem 1.2rem"}}>Get Directions &rarr;</a>
+                                        <a href="https://www.google.com/maps/dir//1004,+Sudarshan+Saket,+Behind+Godrej+Garden+City,+Chainpur+Road,+Jagatpur,+Ahmedabad+-+382470" target="_blank" className="btn btn-primary" style={{"fontSize":"0.9rem","padding":"0.6rem 1.2rem"}}>Get Directions &rarr;</a>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
             </div>
             <div style={{"height":"500px","borderRadius":"16px","overflow":"hidden","border":"1px solid rgba(0,0,0,0.1)","boxShadow":"0 10px 30px rgba(0,0,0,0.05)"}}>
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.96739958784!2d72.5458143!3d23.1074127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83005eaed8a5%3A0xc3f605a91176b6b7!2sSudarshan%20Saket!5e0!3m2!1sen!2sin!4v1713714000000!5m2!1sen!2sin" 
+                    src="https://maps.google.com/maps?q=1004,+Sudarshan+Saket,+Behind+Godrej+Garden+City,+Chainpur+Road,+Jagatpur,+Ahmedabad+-+382470&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                     width="100%" 
                     height="100%" 
                     style={{"border":"0"}} 
