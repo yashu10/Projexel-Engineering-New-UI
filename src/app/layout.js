@@ -15,9 +15,6 @@ const outfit = Outfit({
 export const metadata = {
   title: "Projexel Engineering",
   description: "EPC & Industrial Services",
-  icons: {
-    icon: "/assets/images/Fav%20Icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {
