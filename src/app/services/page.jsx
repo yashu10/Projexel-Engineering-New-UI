@@ -5,6 +5,22 @@ export const metadata = {
   title: "Our Services | Turnkey EPC, E&I & Fabrication | Projexel Engineering",
   description: "Explore our wide range of services including Turnkey EPC, Electrical & Instrumentation (E&I), Mechanical Fabrication, and Industrial Automation solutions.",
   keywords: "EPC services, E&I solutions, mechanical fabrication, industrial automation, turnkey projects, electrical engineering",
+  alternates: {
+    canonical: "https://projexelengineering.com/services",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://projexelengineering.com/services",
+    title: "Our Services | Turnkey EPC, E&I & Fabrication | Projexel Engineering",
+    description: "Turnkey EPC, Electrical & Instrumentation (E&I), Mechanical Fabrication, and Industrial Automation solutions from Projexel Engineering.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Projexel Engineering Services" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services | Turnkey EPC, E&I & Fabrication | Projexel Engineering",
+    description: "Turnkey EPC, E&I, Mechanical Fabrication, and Industrial Automation solutions from Projexel Engineering.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function ServicesPage() {

@@ -6,6 +6,22 @@ export const metadata = {
   title: "Engineering & EPC Blog | Insights from Projexel Engineering",
   description: "Read the latest insights, industry trends, and updates on Turnkey EPC, mechanical fabrication, and E&I solutions from the experts at Projexel Engineering.",
   keywords: "EPC blog, engineering blog, mechanical fabrication insights, E&I trends, industrial engineering news",
+  alternates: {
+    canonical: "https://projexelengineering.com/blog",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://projexelengineering.com/blog",
+    title: "Engineering & EPC Blog | Insights from Projexel Engineering",
+    description: "Latest insights, industry trends, and updates on Turnkey EPC, mechanical fabrication, and E&I solutions from Projexel Engineering.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Projexel Engineering Blog" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Engineering & EPC Blog | Insights from Projexel Engineering",
+    description: "Latest insights on Turnkey EPC, mechanical fabrication, and E&I solutions from Projexel Engineering.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function BlogPage() {

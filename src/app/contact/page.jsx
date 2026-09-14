@@ -6,6 +6,22 @@ export const metadata = {
   title: "Contact Us | Projexel Engineering - Get a Quote in Ahmedabad",
   description: "Contact Projexel Engineering today for expert EPC, mechanical fabrication, and E&I solutions. Get in touch with our team in Ahmedabad, Gujarat.",
   keywords: "contact Projexel Engineering, EPC contractor contact, request quote EPC, engineering firm Ahmedabad, contact details Projexel",
+  alternates: {
+    canonical: "https://projexelengineering.com/contact",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://projexelengineering.com/contact",
+    title: "Contact Us | Projexel Engineering - Get a Quote in Ahmedabad",
+    description: "Contact Projexel Engineering for expert EPC, mechanical fabrication, and E&I solutions in Ahmedabad, Gujarat.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Contact Projexel Engineering" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Projexel Engineering - Get a Quote in Ahmedabad",
+    description: "Contact Projexel Engineering for expert EPC, mechanical fabrication, and E&I solutions in Ahmedabad, Gujarat.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function ContactPage() {

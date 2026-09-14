@@ -17,9 +17,35 @@ export async function generateMetadata({ params }) {
       title: "Article Not Found | Projexel Engineering",
     };
   }
+  const canonicalUrl = `https://projexelengineering.com/blog/${post.id}`;
   return {
     title: `${post.title} | Projexel Engineering`,
     description: post.summary,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      type: "article",
+      url: canonicalUrl,
+      title: post.title,
+      description: post.summary,
+      publishedTime: post.date,
+      authors: [post.author],
+      images: [
+        {
+          url: post.image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.summary,
+      images: [post.image],
+    },
   };
 }
 
@@ -49,8 +75,38 @@ export default async function BlogDetailPage({ params }) {
   const initials = post.author.split(' ').map((n) => n[0]).join('');
   const recentArticles = blogPosts.filter((p) => p.id !== id).slice(0, 3);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.summary,
+    "image": `https://projexelengineering.com${post.image}`,
+    "datePublished": post.date,
+    "author": {
+      "@type": "Person",
+      "name": post.author,
+      "jobTitle": post.role,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Projexel Engineering",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://projexelengineering.com/assets/images/logo.png",
+      },
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://projexelengineering.com/blog/${post.id}`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Header />
       
       {/* Page Header */}
