@@ -6,6 +6,22 @@ export const metadata = {
   title: "About Us | Projexel Engineering - Leading EPC Contractor in Gujarat",
   description: "Learn about Projexel Engineering, our mission, vision, and how we deliver world-class Engineering, Procurement, and Construction (EPC) services across India.",
   keywords: "about Projexel Engineering, EPC company Gujarat, engineering firm, EPC contractor India, turnkey projects",
+  alternates: {
+    canonical: "https://projexelengineering.com/about",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://projexelengineering.com/about",
+    title: "About Us | Projexel Engineering - Leading EPC Contractor in Gujarat",
+    description: "Learn about Projexel Engineering, our mission, vision, and how we deliver world-class EPC services across India.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "About Projexel Engineering" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Projexel Engineering - Leading EPC Contractor in Gujarat",
+    description: "Learn about Projexel Engineering, our mission, vision, and how we deliver world-class EPC services across India.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function AboutPage() {

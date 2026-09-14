@@ -6,11 +6,44 @@ export const metadata = {
   title: "Projexel Engineering | Top EPC & Industrial Services in Ahmedabad",
   description: "Projexel Engineering offers premier Turnkey EPC, E&I, and mechanical fabrication solutions in Ahmedabad, Gujarat. Trusted by leading brands like JSW Steel and Coca-Cola.",
   keywords: "EPC contractor, turnkey projects, industrial engineering, E&I, mechanical fabrication, Ahmedabad, Gujarat, India",
+  alternates: {
+    canonical: "https://projexelengineering.com",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://projexelengineering.com",
+    title: "Projexel Engineering | Top EPC & Industrial Services in Ahmedabad",
+    description: "Premier Turnkey EPC, E&I, and mechanical fabrication solutions in Ahmedabad, Gujarat. Trusted by JSW Steel, Coca-Cola, Amul, and more.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Projexel Engineering — Turnkey EPC & Industrial Services, Ahmedabad" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projexel Engineering | Top EPC & Industrial Services in Ahmedabad",
+    description: "Premier Turnkey EPC, E&I, and mechanical fabrication solutions in Ahmedabad, Gujarat.",
+    images: ["/og-image.png"],
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://projexelengineering.com" },
+    { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://projexelengineering.com/about" },
+    { "@type": "ListItem", "position": 3, "name": "Services", "item": "https://projexelengineering.com/services" },
+    { "@type": "ListItem", "position": 4, "name": "Projects", "item": "https://projexelengineering.com/projects" },
+    { "@type": "ListItem", "position": 5, "name": "Blog", "item": "https://projexelengineering.com/blog" },
+    { "@type": "ListItem", "position": 6, "name": "Contact", "item": "https://projexelengineering.com/contact" },
+  ],
 };
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
       
     {/*  Navbar Placeholder  */}
