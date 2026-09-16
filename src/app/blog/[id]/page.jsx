@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { blogPosts } from '@/data/blogPosts';
 
 export async function generateStaticParams() {
@@ -187,16 +188,17 @@ export default async function BlogDetailPage({ params }) {
             {/* Main Article Column */}
             <div className="article-column slide-in-left is-visible">
               {/* Featured Image */}
-              <div style={{
-                width: '100%',
-                height: 'clamp(250px, 45vw, 450px)',
-                borderRadius: 'var(--radius-lg)',
-                overflow: 'hidden',
-                marginBottom: '3rem',
-                boxShadow: '0 20px 40px rgba(0,0,0,0.06)'
-              }}>
-                <img id="articleImage" src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
-              </div>
+                <div style={{
+                  width: '100%',
+                  height: 'clamp(250px, 45vw, 450px)',
+                  borderRadius: 'var(--radius-lg)',
+                  overflow: 'hidden',
+                  marginBottom: '3rem',
+                  boxShadow: '0 20px 40px rgba(0,0,0,0.06)',
+                  position: 'relative'
+                }}>
+                  <Image id="articleImage" src={post.image} alt={post.title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 80vw" priority />
+                </div>
 
               {/* Article Body Content */}
               <article id="articleBody" className="article-content" dangerouslySetInnerHTML={{ __html: post.content }}>

@@ -17,34 +17,36 @@ const BASE_URL = "https://projexelengineering.com";
 export const metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Projexel Engineering | Top EPC & Industrial Services in Ahmedabad",
+    // 51 chars — EPC + Ahmedabad keywords front-loaded
+    default: "EPC & Industrial Solutions Ahmedabad | Projexel",
     template: "%s | Projexel Engineering",
   },
+  // 155 chars — keyword-first, compelling, within 150-160 char limit
   description:
-    "Projexel Engineering offers premier Turnkey EPC, E&I, and mechanical fabrication solutions in Ahmedabad, Gujarat. Trusted by leading brands like JSW Steel and Coca-Cola.",
+    "EPC & turnkey industrial solutions in Ahmedabad, Gujarat. Electrical, instrumentation & mechanical fabrication — trusted by JSW Steel, Coca-Cola & Amul.",
   keywords:
     "EPC contractor, turnkey projects, industrial engineering, E&I, mechanical fabrication, Ahmedabad, Gujarat, India",
   openGraph: {
     type: "website",
     siteName: "Projexel Engineering",
-    title: "Projexel Engineering | Top EPC & Industrial Services in Ahmedabad",
+    title: "EPC & Industrial Solutions Ahmedabad | Projexel Engineering",
     description:
-      "Premier Turnkey EPC, E&I, and mechanical fabrication solutions in Ahmedabad, Gujarat. Trusted by JSW Steel, Coca-Cola, Amul, and more.",
+      "EPC & turnkey industrial solutions in Ahmedabad, Gujarat. Electrical, instrumentation & mechanical fabrication — trusted by JSW Steel, Coca-Cola & Amul.",
     url: BASE_URL,
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Projexel Engineering — Turnkey EPC & Industrial Services, Ahmedabad",
+        alt: "Projexel Engineering — Turnkey EPC & Industrial Solutions, Ahmedabad",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Projexel Engineering | Top EPC & Industrial Services in Ahmedabad",
+    title: "EPC & Industrial Solutions Ahmedabad | Projexel Engineering",
     description:
-      "Premier Turnkey EPC, E&I, and mechanical fabrication solutions in Ahmedabad, Gujarat.",
+      "EPC & turnkey industrial solutions in Ahmedabad, Gujarat. Electrical, instrumentation & mechanical fabrication.",
     images: ["/og-image.png"],
   },
   alternates: {

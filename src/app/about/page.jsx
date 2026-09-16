@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import Image from 'next/image';
 
 export const metadata = {
   title: "About Us | Projexel Engineering - Leading EPC Contractor in Gujarat",
@@ -323,58 +324,58 @@ export default function AboutPage() {
             <div className="clients-grid"
                 style={{"display":"grid","gridTemplateColumns":"repeat(auto-fill, minmax(180px, 1fr))","gap":"2rem"}}>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2739.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2739.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2741.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2741.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="/assets/images/Client Logo/Group 2743.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2743.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="/assets/images/Client Logo/Group 2744.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2744.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2745.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2745.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2746.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2746.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="/assets/images/Client Logo/Group 2747.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2747.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="/assets/images/Client Logo/Group 2748.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2748.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2749.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2749.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2750.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2750.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="/assets/images/Client Logo/Group 2751.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2751.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="/assets/images/Client Logo/Group 2752.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2752.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2753.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2753.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2754.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2754.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="/assets/images/Client Logo/Group 2755.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2755.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="/assets/images/Client Logo/Group 2756.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2756.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2757.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2757.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2758.png" alt="Client Logo" loading="lazy" />
+                    <Image src="/assets/images/Client Logo/Group 2758.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
             </div>
         </div>

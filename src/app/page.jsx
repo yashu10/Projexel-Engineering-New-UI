@@ -1,10 +1,13 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import Image from 'next/image';
 
 export const metadata = {
-  title: "Projexel Engineering | Top EPC & Industrial Services in Ahmedabad",
-  description: "Projexel Engineering offers premier Turnkey EPC, E&I, and mechanical fabrication solutions in Ahmedabad, Gujarat. Trusted by leading brands like JSW Steel and Coca-Cola.",
+  // 51 chars — EPC + Ahmedabad front-loaded
+  title: "EPC & Industrial Solutions Ahmedabad | Projexel",
+  // 155 chars — within 150-160 limit
+  description: "EPC & turnkey industrial solutions in Ahmedabad, Gujarat. Electrical, instrumentation & mechanical fabrication — trusted by JSW Steel, Coca-Cola & Amul.",
   keywords: "EPC contractor, turnkey projects, industrial engineering, E&I, mechanical fabrication, Ahmedabad, Gujarat, India",
   alternates: {
     canonical: "https://projexelengineering.com",
@@ -12,14 +15,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://projexelengineering.com",
-    title: "Projexel Engineering | Top EPC & Industrial Services in Ahmedabad",
-    description: "Premier Turnkey EPC, E&I, and mechanical fabrication solutions in Ahmedabad, Gujarat. Trusted by JSW Steel, Coca-Cola, Amul, and more.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Projexel Engineering — Turnkey EPC & Industrial Services, Ahmedabad" }],
+    title: "EPC & Industrial Solutions Ahmedabad | Projexel Engineering",
+    description: "EPC & turnkey industrial solutions in Ahmedabad, Gujarat. Electrical, instrumentation & mechanical fabrication — trusted by JSW Steel, Coca-Cola & Amul.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Projexel Engineering — Turnkey EPC & Industrial Solutions, Ahmedabad" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Projexel Engineering | Top EPC & Industrial Services in Ahmedabad",
-    description: "Premier Turnkey EPC, E&I, and mechanical fabrication solutions in Ahmedabad, Gujarat.",
+    title: "EPC & Industrial Solutions Ahmedabad | Projexel Engineering",
+    description: "EPC & turnkey industrial solutions in Ahmedabad, Gujarat. Electrical, instrumentation & mechanical fabrication.",
     images: ["/og-image.png"],
   },
 };
@@ -58,7 +61,7 @@ export default function Home() {
             </div>
 
             <h1 className="hero-title-new fade-in-up delay-1">
-                From Concept to Commissioning, <br />We Deliver <span className="highlight-orange">Excellence</span>
+                Turnkey EPC &amp; Industrial Solutions in Ahmedabad &mdash; <br /><span className="highlight-orange">From Concept to Commissioning</span>
             </h1>
 
             <p className="hero-subtitle-new fade-in-up delay-2">
@@ -97,7 +100,7 @@ export default function Home() {
 
         {/*  Right Side Refinery Image Column  */}
         <div className="hero-right-image-wrap">
-            <div className="hero-right-image" style={{"backgroundImage":"url('/assets/images/hero_bg.png')"}}></div>
+            <div className="hero-right-image" style={{"backgroundImage":"url('/assets/images/hero_bg.webp')"}}></div>
 
             {/*  Floating Watch Video Card  */}
             {/*  <div className="hero-video-card">
@@ -166,58 +169,58 @@ export default function Home() {
             <div className="clients-grid"
                 style={{"display":"grid","gridTemplateColumns":"repeat(auto-fill, minmax(180px, 1fr))","gap":"2rem"}}>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2739.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2739.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2741.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2741.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="/assets/images/Client Logo/Group 2743.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2743.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="/assets/images/Client Logo/Group 2744.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2744.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2745.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2745.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2746.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2746.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="/assets/images/Client Logo/Group 2747.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2747.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="/assets/images/Client Logo/Group 2748.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2748.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2749.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2749.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2750.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2750.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="/assets/images/Client Logo/Group 2751.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2751.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="/assets/images/Client Logo/Group 2752.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2752.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2753.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2753.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2754.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2754.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-3">
-                    <img src="/assets/images/Client Logo/Group 2755.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2755.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-4">
-                    <img src="/assets/images/Client Logo/Group 2756.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2756.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-1">
-                    <img src="/assets/images/Client Logo/Group 2757.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2757.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
                 <div className="client-logo-card glass-panel fade-in-up delay-2">
-                    <img src="/assets/images/Client Logo/Group 2758.png" alt="Client Logo" />
+                    <Image src="/assets/images/Client Logo/Group 2758.png" alt="Client logo — industry partner" width={180} height={80} style={{objectFit:"contain"}} />
                 </div>
             </div>
         </div>
@@ -236,7 +239,7 @@ export default function Home() {
             <div className="services-grid">
                 {/*  Service 1  */}
                 <div className="service-card fade-in-up delay-1">
-                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_turnkey.png')"}}>
+                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_turnkey.webp')"}}>
                     </div>
                     <div className="service-content glass-panel">
                         <div className="service-icon">
@@ -255,7 +258,7 @@ export default function Home() {
 
                 {/*  Service 2  */}
                 <div className="service-card fade-in-up delay-2">
-                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_ei.png')"}}></div>
+                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_ei.webp')"}}></div>
                     <div className="service-content glass-panel">
                         <div className="service-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -272,7 +275,7 @@ export default function Home() {
 
                 {/*  Service 3  */}
                 <div className="service-card fade-in-up delay-3">
-                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_industrial.png')"}}>
+                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_industrial.webp')"}}>
                     </div>
                     <div className="service-content glass-panel">
                         <div className="service-icon">
@@ -292,7 +295,7 @@ export default function Home() {
                 </div>
                 {/*  Service 4  */}
                 <div className="service-card fade-in-up delay-1">
-                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_mechanical.png')"}}>
+                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_mechanical.webp')"}}>
                     </div>
                     <div className="service-content glass-panel">
                         <div className="service-icon">
@@ -312,7 +315,7 @@ export default function Home() {
 
                 {/*  Service 5  */}
                 <div className="service-card fade-in-up delay-2">
-                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_oilgas.png')"}}></div>
+                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_oilgas.webp')"}}></div>
                     <div className="service-content glass-panel">
                         <div className="service-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -330,7 +333,7 @@ export default function Home() {
 
                 {/*  Service 6  */}
                 <div className="service-card fade-in-up delay-3">
-                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_mep.png')"}}></div>
+                    <div className="service-image" style={{"backgroundImage":"url('/assets/images/service_mep.webp')"}}></div>
                     <div className="service-content glass-panel">
                         <div className="service-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -367,7 +370,7 @@ export default function Home() {
                 <div className="portfolio-card fade-in-up delay-1">
                     <div className="portfolio-img-wrapper">
                         <div className="portfolio-img"
-                            style={{"backgroundImage":"url('/assets/images/Project/Sr. 1 Gujrat gardian ma.jpeg')"}}></div>
+                            style={{"backgroundImage":"url('/assets/images/Project/Sr. 1 Gujrat gardian ma.webp')"}}></div>
                     </div>
                     <div className="portfolio-content">
                         <div className="client-name">1. Gujarat Guardian Limited</div>
@@ -392,7 +395,7 @@ export default function Home() {
                 <div className="portfolio-card fade-in-up delay-2">
                     <div className="portfolio-img-wrapper">
                         <div className="portfolio-img"
-                            style={{"backgroundImage":"url('/assets/images/Project/2. JSW Steel Limited.jpeg')"}}>
+                            style={{"backgroundImage":"url('/assets/images/Project/2. JSW Steel Limited.webp')"}}>
                         </div>
                     </div>
                     <div className="portfolio-content">
@@ -504,7 +507,7 @@ export default function Home() {
                 <div className="glass-panel fade-in-up delay-1"
                     style={{"padding":"0","overflow":"hidden","borderRadius":"var(--radius-lg)","transition":"var(--transition)"}}>
                     <div
-                        style={{"height":"200px","backgroundImage":"url('/assets/images/proj_real_water.png')","backgroundSize":"cover","backgroundPosition":"center"}}>
+                        style={{"height":"200px","backgroundImage":"url('/assets/images/proj_real_water.webp')","backgroundSize":"cover","backgroundPosition":"center"}}>
                     </div>
                     <div style={{"padding":"2rem"}}>
                         <span
@@ -525,7 +528,7 @@ export default function Home() {
                 <div className="glass-panel fade-in-up delay-2"
                      style={{"padding":"0","overflow":"hidden","borderRadius":"var(--radius-lg)","transition":"var(--transition)"}}>
                     <div
-                        style={{"height":"200px","backgroundImage":"url('/assets/images/proj_real_mechanical.png')","backgroundSize":"cover","backgroundPosition":"center"}}>
+                        style={{"height":"200px","backgroundImage":"url('/assets/images/proj_real_mechanical.webp')","backgroundSize":"cover","backgroundPosition":"center"}}>
                     </div>
                     <div style={{"padding":"2rem"}}>
                         <span
@@ -547,7 +550,7 @@ export default function Home() {
                 <div className="glass-panel fade-in-up delay-3"
                      style={{"padding":"0","overflow":"hidden","borderRadius":"var(--radius-lg)","transition":"var(--transition)"}}>
                     <div
-                        style={{"height":"200px","backgroundImage":"url('/assets/images/proj_real_ei.png')","backgroundSize":"cover","backgroundPosition":"center"}}>
+                        style={{"height":"200px","backgroundImage":"url('/assets/images/proj_real_ei.webp')","backgroundSize":"cover","backgroundPosition":"center"}}>
                     </div>
                     <div style={{"padding":"2rem"}}>
                         <span

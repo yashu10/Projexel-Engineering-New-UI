@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
           <div className="container footer-grid">
               <div className="footer-brand">
                   <Link href="/" className="logo-link">
-                      <img src="/assets/images/logo.png" alt="Projexel Engineering" className="logo-img" />
+                      <Image src="/assets/images/logo.webp" alt="Projexel Engineering" width={140} height={42} className="logo-img" />
                   </Link>
                   <p className="footer-desc">Setting the global benchmark in EPC, E&I, and Industrial Engineering services through an unwavering commitment to quality and execution excellence.</p>
               </div>

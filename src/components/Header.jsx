@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -39,7 +40,7 @@ export default function Header() {
         <div className="header-branding">
             <div className="branding-container">
                 <Link href="/" className="logo-link" onClick={closeMenu}>
-                    <img src="/assets/images/logo.png" alt="Projexel Engineering Logo" className="header-logo" />
+                    <Image src="/assets/images/logo.webp" alt="Projexel Engineering Logo" width={160} height={48} className="header-logo" priority />
                 </Link>
                 <p className="company-tagline">Where Engineering Meets Execution, with Precision</p>
             </div>
